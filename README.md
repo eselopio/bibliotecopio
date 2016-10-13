@@ -5,3 +5,5 @@ This document was created to be a guide to the essentials in the field of progra
 
 - java
   -list
+	-Arraylist
+	-LinkedList
