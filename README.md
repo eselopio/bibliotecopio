@@ -9,6 +9,8 @@ This document was created to be a guide to the essentials in the field of progra
  - List
 	 - Arraylist
 	 - LinkedList
+ - Interviews
+	 - CompareTwoArrays
 
 
 
