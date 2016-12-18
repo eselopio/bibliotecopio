@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Closure</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <script>
+            var externa = function(parametroExterno){
+                var localExterna = parametroExterno * 2;
+                    var interna = function(parametroInterno){
+                        var localInterna = parametroInterno * 3;
+                        return localInterna * localExterna; 
+                    };
+
+                return interna;    
+            }
+
+            var resultado = externa(10);
+            // Local
+            //     interna:(parametroInterno)
+            //     localExterna:undefined
+            //     parametroExterno:10
+            // this:Window
+        
+            // Global
+            // window
+
+            var resultado2 = resultado(15);
+            // Local
+            // Return Value:900
+            // localInterna:45
+            // parametroInterno:15
+            // this:Window
+            
+            // Closure (externa)
+            // localExterna:20
+
+            console.log(resultado2);
+       </script>
+    </body>
+</html>
