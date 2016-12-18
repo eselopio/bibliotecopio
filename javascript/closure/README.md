@@ -13,4 +13,4 @@ No es aconsejable crear innecesariamente funciones dentro de otras funciones si 
 Por ejemplo, cuando se crea un nuevo objeto/clase, los métodos normalmente deberían asociarse al prototipo del objeto en vez de definirse en el constructor del objeto. La razón es que con este último sistema, cada vez que se llama al constructor (cada vez que se crea un objeto) se tienen que reasignar los métodos.
 
 
-*italic* Fuente. [MDn](https://developer.mozilla.org/es/docs/Web/JavaScript/Closures)
+*Fuente* : [MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Closures)
